@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rentcarcontroller">
+   <top>
+      <AnchorPane prefHeight="59.0" prefWidth="700.0" style="-fx-background-color: white; -fx-border-color: #c91010; -fx-border-width: 0px 0px 2px 0px;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="49.0" fitWidth="225.0" layoutX="14.0" layoutY="5.0">
+               <image>
+                  <Image url="@img/Screenshot_2023-12-03_105814-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="491.0" prefWidth="136.0" style="-fx-background-color: #c91010;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button cache="true" mnemonicParsing="false" onAction="#acar" prefHeight="31.0" prefWidth="138.0" style="-fx-background-color: #c91010;" text="CARS" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CAR">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </FontAwesomeIcon>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#ocar" prefHeight="31.0" prefWidth="138.0" style="-fx-background-color: #c91010;" text="MY RIDE" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="SHOPPING_CART" />
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#lo" prefHeight="31.0" prefWidth="138.0" style="-fx-background-color: #c91010;" text="LOG OUT" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <padding>
+                        <Insets bottom="10.0" top="30.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" />
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="216.0" fitWidth="281.0" layoutX="154.0" layoutY="37.0">
+               <image>
+                  <Image url="@img/2023-acura-integra-a-spec-2.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="mod" alignment="CENTER" layoutX="237.0" layoutY="261.0" prefHeight="17.0" prefWidth="115.0" textFill="#c91010">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="cat" layoutX="96.0" layoutY="308.0" prefHeight="19.0" prefWidth="137.0" textFill="#c91010">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="mody" layoutX="96.0" layoutY="327.0" prefHeight="19.0" prefWidth="137.0" textFill="#c91010">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="np" layoutX="96.0" layoutY="356.0" prefHeight="19.0" prefWidth="137.0" textFill="#c91010">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="mil" layoutX="366.0" layoutY="317.0" prefHeight="19.0" prefWidth="137.0" textFill="#c91010">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="cpd" layoutX="366.0" layoutY="336.0" prefHeight="19.0" prefWidth="137.0" textFill="#c91010">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lfc" layoutX="366.0" layoutY="365.0" prefHeight="19.0" prefWidth="137.0" textFill="#c91010">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Button layoutX="251.0" layoutY="412.0" mnemonicParsing="false" onAction="#bn" prefHeight="35.0" prefWidth="88.0" style="-fx-background-color: #ffff; -fx-border-color: #c91010;" text="BOOK NOW" textFill="#c91010" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

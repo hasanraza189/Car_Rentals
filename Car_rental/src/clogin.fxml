@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" style="-fx-border-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clogincontroller">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="450.0" fitWidth="301.0" layoutX="-1.0" layoutY="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.topAnchor="1.0">
+               <image>
+                  <Image url="@img/0963a525631d13098115d6704d771ffb.gif" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="120.0" layoutY="409.0" text="Sign Up" textFill="#fbf7f7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="68.0" fitWidth="354.0" layoutX="-1.0" layoutY="382.0" AnchorPane.rightAnchor="0.0">
+               <image>
+                  <Image url="@img/andalusia-on-the-road-article.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="cid" layoutX="107.0" layoutY="178.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #c91010; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="pwd" layoutX="107.0" layoutY="243.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #c91010; -fx-border-width: 0px 0px 2px 0px;" />
+            <FontAwesomeIcon fill="#141414" glyphName="KEY" layoutX="66.0" layoutY="264.0" size="20" tabSize="20" />
+            <FontAwesomeIcon glyphName="CAR" layoutX="65.0" layoutY="197.0" size="20" tabSize="20" />
+            <Button layoutX="137.0" layoutY="316.0" mnemonicParsing="false" onAction="#lin" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #c91010;" text="Log in" textFill="#e3f4ff" />
+            <ImageView fitHeight="118.0" fitWidth="179.0" layoutX="93.0" layoutY="26.0">
+               <image>
+                  <Image url="@img/Screenshot_2023-12-01_181814-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="warn1" layoutX="105.0" layoutY="283.0" prefHeight="17.0" prefWidth="153.0" textAlignment="CENTER" />
+         </children></AnchorPane>
+   </right>
+</BorderPane>

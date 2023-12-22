@@ -1,0 +1,30 @@
+.table-view{
+    -fx-background-color:transparent;
+    -fx-padding:0px;
+}
+.table-view .table-column{
+    -fx-alignment:CENTER;
+    -fx-background-color:transparent;
+    -fx-padding:2px;
+}
+.table-view .column-header-background{
+    -fx-background-color: #c91010;
+    -fx-background-insets: 0 0 0 0;
+    -f-background-radius:8px 8px 0px 0px;
+}
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size:35px;
+}
+.table-view .column-header .label{
+    -fx-text-fill:#fff;
+}
+.table-row {
+    -fx-border-width: 2;
+    -fx-border-color: black;
+    -fx-padding: 5;
+}
+
+.table-view {
+    -fx-table-cell-border-color: transparent; /* Hide the cell borders to avoid double borders */
+}
